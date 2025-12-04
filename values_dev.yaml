@@ -1,6 +1,6 @@
 common:
-  containerRegistryURL: fzihld042716acr.azurecr.io
-  connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:fzihld042716sqlserver.database.windows.net,1433;Database=local.final_root_sql_database_name-dev;Uid=SQLUser1;Pwd=SQLPass1;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+  containerRegistryURL: fxlpfm053815acr.azurecr.io
+  connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:fxlpfm053815sqlserver.database.windows.net,1433;Database=local.final_root_sql_database_name-dev;Uid=SQLUser1;Pwd=SQLPass1;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
 
 ui:
   replicas: 1
