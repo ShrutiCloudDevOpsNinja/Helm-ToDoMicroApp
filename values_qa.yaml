@@ -1,5 +1,5 @@
 common:
-  containerRegistryURL: oaiiqv113623acr.azurecr.io
+  containerRegistryURL: devops.azurecr.io
   connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:oaiiqv113623sqlserver.database.windows.net,1433;Database=oaiiqv-113623-SQLDB-qa;Uid=SQLUser1;Pwd=SQLPass1@;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
 
 ui:
@@ -10,9 +10,9 @@ ui:
   ingress:
     host: qa-ui.sharmaji.club
   env:
-    REACT_APP_GET_TASKS_API_BASE_URL: "http://qa-get-tasks-api.sharmaji.club"
-    REACT_APP_DELETE_TASK_API_BASE_URL: "http://qa-delete-task-api.sharmaji.club"
-    REACT_APP_CREATE_TASK_API_BASE_URL: "http://qa-add-task-api.sharmaji.club"
+    REACT_APP_GET_TASKS_API_BASE_URL: "http://qa-get-tasks-api.shruti.online"
+    REACT_APP_DELETE_TASK_API_BASE_URL: "http://qa-delete-task-api.shruti.online"
+    REACT_APP_CREATE_TASK_API_BASE_URL: "http://qa-add-task-api.shruti.online"
 
 addTask:
   replicas: 1
@@ -20,7 +20,7 @@ addTask:
     name: todo-add-tasks-api
     tag: v1
   ingress:
-    host: qa-add-task-api.sharmaji.club
+    host: qa-add-task-api.shruti.online
 
 deleteTask:
   replicas: 2
@@ -28,7 +28,7 @@ deleteTask:
     name: todo-delete-tasks-api
     tag: v1
   ingress:
-    host: qa-delete-task-api.sharmaji.club
+    host: qa-delete-task-api.shruti.online
 
 getTask:
   replicas: 1
@@ -36,4 +36,4 @@ getTask:
     name: todo-get-tasks-api
     tag: v1
   ingress:
-    host: qa-get-tasks-api.sharmaji.club
+    host: qa-get-tasks-api.shruti.online
