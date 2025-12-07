@@ -1,5 +1,5 @@
 common:
-  containerRegistryURL: fxlpfm053815acr.azurecr.io
+  containerRegistryURL: devops.azurecr.io
   connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:fxlpfm053815sqlserver.database.windows.net,1433;Database=local.final_root_sql_database_name-dev;Uid=SQLUser1;Pwd=SQLPass1;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
 
 ui:
@@ -10,9 +10,9 @@ ui:
   ingress:
     host: dev-ui.sharmaji.club
   env:
-    REACT_APP_GET_TASKS_API_BASE_URL: "http://get-tasks-api.sharmaji.club"
-    REACT_APP_DELETE_TASK_API_BASE_URL: "http://delete-task-api.sharmaji.club"
-    REACT_APP_CREATE_TASK_API_BASE_URL: "http://add-task-api.sharmaji.club"
+    REACT_APP_GET_TASKS_API_BASE_URL: "http://get-tasks-api.shruti.online"
+    REACT_APP_DELETE_TASK_API_BASE_URL: "http://delete-task-api.shruti.online"
+    REACT_APP_CREATE_TASK_API_BASE_URL: "http://add-task-api.shruti.online"
 
 addTask:
   replicas: 2
@@ -20,7 +20,7 @@ addTask:
     name: todo-add-tasks-api
     tag: v1
   ingress:
-    host: add-task-api.sharmaji.club
+    host: add-task-api.shruti.online
 
 deleteTask:
   replicas: 1
@@ -28,7 +28,7 @@ deleteTask:
     name: todo-delete-tasks-api
     tag: v1
   ingress:
-    host: delete-task-api.sharmaji.club
+    host: delete-task-api.shruti.online
 
 getTask:
   replicas: 2
@@ -36,4 +36,4 @@ getTask:
     name: todo-get-tasks-api
     tag: v1
   ingress:
-    host: get-tasks-api.sharmaji.club
+    host: get-tasks-api.shruti.online
