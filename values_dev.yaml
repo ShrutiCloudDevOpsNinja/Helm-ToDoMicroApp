@@ -1,6 +1,6 @@
 common:
   containerRegistryURL: mahadevdevops.azurecr.io
-  connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:fxlpfm053815sqlserver.database.windows.net,1433;Database=local.final_root_sql_database_name-dev;Uid=SQLUser1;Pwd=SQLPass1;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+  connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:mahadevsql.database.windows.net,1433;Database=mahadev;Uid=SQLUser;Pwd=MahadevJi@123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
 
 ui:
   replicas: 1
