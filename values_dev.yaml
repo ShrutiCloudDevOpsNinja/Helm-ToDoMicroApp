@@ -1,5 +1,5 @@
 common:
-  containerRegistryURL: devops.azurecr.io
+  containerRegistryURL: mahadevdevops.azurecr.io
   connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:fxlpfm053815sqlserver.database.windows.net,1433;Database=local.final_root_sql_database_name-dev;Uid=SQLUser1;Pwd=SQLPass1;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
 
 ui:
@@ -8,7 +8,7 @@ ui:
     name: todo-ui
     tag: v1
   ingress:
-    host: dev-ui.sharmaji.club
+    host: dev-ui.shruti.online
   env:
     REACT_APP_GET_TASKS_API_BASE_URL: "http://get-tasks-api.shruti.online"
     REACT_APP_DELETE_TASK_API_BASE_URL: "http://delete-task-api.shruti.online"
